@@ -1,0 +1,346 @@
+CRITICAL - 2024-04-20 17:27:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(13): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:29:26 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(13): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:30:02 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/1]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(72): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:31:25 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/1]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(72): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:31:59 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/1]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(72): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:34:52 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/1]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(74): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:34:58 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(15): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:36:07 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/1]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(74): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:36:12 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/1]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(74): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:48:43 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/2]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(72): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:49:15 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/2]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(72): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:49:19 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(13): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 17:57:01 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(11): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:03:22 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 183.
+ 1 APPPATH\Views\template\header.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 183)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(11): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:03:23 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 183.
+ 1 APPPATH\Views\template\header.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 183)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(11): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:12:12 --> Error: Cannot use object of type App\Models\ModeloResidentes as array
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 183.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 4 APPPATH\Controllers\Residentes.php(11): view('template/header', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:12:19 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/2]
+in APPPATH\Views\template\header.php on line 183.
+ 1 APPPATH\Views\template\header.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 183)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(70): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:12:28 --> Error: Cannot use object of type App\Models\ModeloResidentes as array
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 183.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 4 APPPATH\Controllers\Residentes.php(11): view('template/header', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:40:07 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 2.
+ 1 APPPATH\Views\template\header.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(13): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:42:04 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: /]
+in APPPATH\Views\template\header.php on line 184.
+ 1 APPPATH\Views\template\header.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 184)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(11): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:46:59 --> ErrorException: Undefined property: CodeIgniter\View\View::$uri
+[Method: GET, Route: listar_r]
+in APPPATH\Views\template\header.php on line 181.
+ 1 APPPATH\Views\template\header.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 181)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(22): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->listar_r()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:49:32 --> ErrorException: Undefined variable $ci
+[Method: GET, Route: listar_r]
+in APPPATH\Views\template\header.php on line 182.
+ 1 APPPATH\Views\template\header.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ci', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 182)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(22): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->listar_r()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:52:45 --> ErrorException: Undefined variable $ci
+[Method: GET, Route: listar_r]
+in APPPATH\Views\template\header.php on line 182.
+ 1 APPPATH\Views\template\header.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ci', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 182)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(22): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->listar_r()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 18:53:12 --> ErrorException: Undefined variable $ci
+[Method: GET, Route: listar_r]
+in APPPATH\Views\template\header.php on line 182.
+ 1 APPPATH\Views\template\header.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ci', 'C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php', 182)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Residentes.php(22): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->listar_r()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 19:17:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/template/header.php"
+[Method: GET, Route: editar_r/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/template/header.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/template/header', [], true)
+ 3 APPPATH\Controllers\Residentes.php(75): view('pagResidentes/template/header')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

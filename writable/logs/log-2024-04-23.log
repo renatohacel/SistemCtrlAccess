@@ -1,0 +1,98 @@
+CRITICAL - 2024-04-23 03:54:23 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/1]
+in APPPATH\Views\pagResidentes\editarResidentes1.php on line 33.
+ 1 APPPATH\Views\pagResidentes\editarResidentes1.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\editarResidentes1.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\editarResidentes1.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/editarResidentes1', [], true)
+ 5 APPPATH\Controllers\Residentes.php(68): view('pagResidentes/editarResidentes1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 03:54:59 --> ErrorException: Undefined variable $residente
+[Method: GET, Route: editar_r/1]
+in APPPATH\Views\pagResidentes\editarResidentes1.php on line 33.
+ 1 APPPATH\Views\pagResidentes\editarResidentes1.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residente', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\editarResidentes1.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\editarResidentes1.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/editarResidentes1', [], true)
+ 5 APPPATH\Controllers\Residentes.php(68): view('pagResidentes/editarResidentes1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->editar_r('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 06:52:38 --> ErrorException: Undefined variable $residentes
+[Method: GET, Route: accesos_r]
+in APPPATH\Views\pagResidentes\accesosResidentes.php on line 45.
+ 1 APPPATH\Views\pagResidentes\accesosResidentes.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residentes', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\accesosResidentes.php', 45)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\accesosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/accesosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(15): view('pagResidentes/accesosResidentes')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->accesos_r()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 21:45:09 --> ErrorException: Undefined array key "tipo"
+[Method: GET, Route: /]
+in APPPATH\Views\accesos\accesos.php on line 49.
+ 1 APPPATH\Views\accesos\accesos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo"', 'C:\\xampp\\htdocs\\sca\\app\\Views\\accesos\\accesos.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\accesos\\accesos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('accesos/accesos', [], true)
+ 5 APPPATH\Controllers\Accesos.php(24): view('accesos/accesos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accesos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accesos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 21:46:41 --> ErrorException: Undefined array key "tipo"
+[Method: GET, Route: /]
+in APPPATH\Views\accesos\accesos.php on line 49.
+ 1 APPPATH\Views\accesos\accesos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo"', 'C:\\xampp\\htdocs\\sca\\app\\Views\\accesos\\accesos.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\accesos\\accesos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('accesos/accesos', [], true)
+ 5 APPPATH\Controllers\Accesos.php(24): view('accesos/accesos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accesos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accesos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 21:47:39 --> ErrorException: Undefined array key "tipo"
+[Method: GET, Route: accesos]
+in APPPATH\Views\accesos\accesos.php on line 49.
+ 1 APPPATH\Views\accesos\accesos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo"', 'C:\\xampp\\htdocs\\sca\\app\\Views\\accesos\\accesos.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\accesos\\accesos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('accesos/accesos', [], true)
+ 5 APPPATH\Controllers\Accesos.php(24): view('accesos/accesos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accesos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accesos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 21:47:44 --> ErrorException: Undefined array key "tipo"
+[Method: GET, Route: accesos]
+in APPPATH\Views\accesos\accesos.php on line 49.
+ 1 APPPATH\Views\accesos\accesos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo"', 'C:\\xampp\\htdocs\\sca\\app\\Views\\accesos\\accesos.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\accesos\\accesos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('accesos/accesos', [], true)
+ 5 APPPATH\Controllers\Accesos.php(24): view('accesos/accesos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accesos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accesos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

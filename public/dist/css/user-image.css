@@ -1,0 +1,12 @@
+.user-panel .image img {
+    margin-top: 2px; /* Ajusta este valor según sea necesario */
+}
+
+.user-panel .image img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.user-panel .image img.scaled {
+    transform: scale(1.1);
+}

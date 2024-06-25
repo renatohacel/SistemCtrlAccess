@@ -1,0 +1,407 @@
+ERROR - 2024-04-24 01:39:24 --> mysqli_sql_exception: Failed to read auto-increment value from storage engine in C:\xampp\htdocs\sca\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\sca\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\sca\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\sca\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\sca\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\sca\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\sca\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\sca\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\sca\app\Controllers\Residentes.php(49): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\sca\system\CodeIgniter.php(933): App\Controllers\Residentes->guardar_r()
+#9 C:\xampp\htdocs\sca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+#10 C:\xampp\htdocs\sca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sca\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\sca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\sca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-04-24 01:39:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Failed to read auto-increment value from storage engine
+[Method: POST, Route: guardar_r]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (:domicilio:, :nombre:, :telefono:, :fechareg_r:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Residentes.php(49): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->guardar_r()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 01:39:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Failed to read auto-increment value from storage engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Justo Sierra 333\', \'Emily Chavez\', \'(393) 939-1911\', \'2024-04-23 19:39:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Justo Sierra 333\', \'Emily Chavez\', \'(393) 939-1911\', \'2024-04-23 19:39:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (:domicilio:, :nombre:, :telefono:, :fechareg_r:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Residentes.php(49): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->guardar_r()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 01:39:24 --> [Caused by] mysqli_sql_exception: Failed to read auto-increment value from storage engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Justo Sierra 333\', \'Emily Chavez\', \'(393) 939-1911\', \'2024-04-23 19:39:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Justo Sierra 333\', \'Emily Chavez\', \'(393) 939-1911\', \'2024-04-23 19:39:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Justo Sierra 333\', \'Emily Chavez\', \'(393) 939-1911\', \'2024-04-23 19:39:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (:domicilio:, :nombre:, :telefono:, :fechareg_r:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Residentes.php(49): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->guardar_r()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-04-24 01:41:02 --> mysqli_sql_exception: Failed to read auto-increment value from storage engine in C:\xampp\htdocs\sca\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\sca\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\sca\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\sca\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\sca\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\sca\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\sca\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\sca\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\sca\app\Controllers\Residentes.php(49): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\sca\system\CodeIgniter.php(933): App\Controllers\Residentes->guardar_r()
+#9 C:\xampp\htdocs\sca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+#10 C:\xampp\htdocs\sca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sca\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\sca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\sca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-04-24 01:41:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Failed to read auto-increment value from storage engine
+[Method: POST, Route: guardar_r]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (:domicilio:, :nombre:, :telefono:, :fechareg_r:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Residentes.php(49): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->guardar_r()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 01:41:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Failed to read auto-increment value from storage engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Ramon Corona\', \'Hacel\', \'(381) 283-9111\', \'2024-04-23 19:41:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Ramon Corona\', \'Hacel\', \'(381) 283-9111\', \'2024-04-23 19:41:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (:domicilio:, :nombre:, :telefono:, :fechareg_r:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Residentes.php(49): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->guardar_r()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 01:41:02 --> [Caused by] mysqli_sql_exception: Failed to read auto-increment value from storage engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Ramon Corona\', \'Hacel\', \'(381) 283-9111\', \'2024-04-23 19:41:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Ramon Corona\', \'Hacel\', \'(381) 283-9111\', \'2024-04-23 19:41:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (\'Ramon Corona\', \'Hacel\', \'(381) 283-9111\', \'2024-04-23 19:41:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `residentes` (`domicilio`, `nombre`, `telefono`, `fechareg_r`) VALUES (:domicilio:, :nombre:, :telefono:, :fechareg_r:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Residentes.php(49): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->guardar_r()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 02:16:31 --> ErrorException: Undefined variable $header
+[Method: GET, Route: acercaDe]
+in APPPATH\Views\acercaDe.php on line 1.
+ 1 APPPATH\Views\acercaDe.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\sca\\app\\Views\\acercaDe.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\acercaDe.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('acercaDe', [], true)
+ 5 APPPATH\Controllers\Residentes.php(95): view('acercaDe')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->acercaDe()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:44:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/9]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(110): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:44:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/9]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(110): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:45:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/9]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(110): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:48:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/9]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(109): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:48:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/8]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(109): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('8')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:58:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/8]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('8')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:58:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/9]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:58:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/8]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('8')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:58:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/8]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('8')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:00:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagResidentes/carrosResidente.php"
+[Method: GET, Route: carros_r/9]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagResidentes/carrosResidente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidente', [], true)
+ 3 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:01:49 --> ErrorException: Array to string conversion
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:02:24 --> ErrorException: Undefined array key "nombre"
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:02:46 --> ErrorException: Undefined array key "id_r"
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 50.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_r"', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 50)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:06:14 --> ErrorException: Undefined array key "nombre"
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:07:43 --> ErrorException: Array to string conversion
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:07:58 --> ErrorException: Array to string conversion
+[Method: GET, Route: carros_r/8]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('8')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:08:16 --> ErrorException: Array to string conversion
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:08:29 --> ErrorException: Undefined array key "nombre"
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:10:52 --> ErrorException: Array to string conversion
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 04:13:03 --> ErrorException: Undefined array key 1
+[Method: GET, Route: carros_r/9]
+in APPPATH\Views\pagResidentes\carrosResidentes.php on line 28.
+ 1 APPPATH\Views\pagResidentes\carrosResidentes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sca\\app\\Views\\pagResidentes\\carrosResidentes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagResidentes/carrosResidentes', [], true)
+ 5 APPPATH\Controllers\Residentes.php(108): view('pagResidentes/carrosResidentes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->carros_r('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 06:13:36 --> Error: Object of class App\Models\ModeloCarros could not be converted to string
+[Method: POST, Route: guardar_c]
+in APPPATH\Controllers\Residentes.php on line 129.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Residentes->guardar_c()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residentes))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
